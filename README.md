@@ -26,9 +26,9 @@
 
 <div align="center">
   <a href="https://github.com/Gabryelf"><img src="https://github.com/Gabryelf.png" width="50" style="border-radius: 50%;"></a>
-  <a href="https://github.com/SigmaLigmaBalls"><img src="https://github.com/SigmaLigmaBalls.png" width="50" style="border-radius: 50%;"></a>
+  <a href="https://github.com/AlimMusaev2009"><img src="https://github.com/AlimMusaev2009.png" width="50" style="border-radius: 50%;"></a>
   <a href="https://github.com/dimasik2281488"><img src="https://github.com/dimasik2281488.png" width="50" style="border-radius: 50%;"></a>
-  <a href="https://github.com/ha_skule1"><img src="https://github.com/ha_skule1.png" width="50" style="border-radius: 50%;"></a>
+  <a href="https://github.com/Eridan6935"><img src="https://github.com/Eridan6935.png" width="50" style="border-radius: 50%;"></a>
   <a href="https://github.com/lafneroo"><img src="https://github.com/lafneroo.png" width="50" style="border-radius: 50%;"></a>
   <a href="https://github.com/Pochtovyaschik"><img src="https://github.com/Pochtovyaschik.png" width="50" style="border-radius: 50%;"></a>
   <a href="https://github.com/nebowork"><img src="https://github.com/nebowork.png" width="50" style="border-radius: 50%;"></a>
