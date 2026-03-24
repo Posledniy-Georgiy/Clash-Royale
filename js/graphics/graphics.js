@@ -27,18 +27,34 @@ window.Graphics = {
         }
     },
     
+    
+    drawTiledImage: function(key, x, y, width, height, tileWidth, tileHeight) {
+        const img = this.images[key];
+        if (!img || !img.complete) {
+            // Заглушка
+            this.ctx.fillStyle = '#888';
+            this.ctx.fillRect(x, y, width, height);
+            return;
+        }
+        
+        for (let row = 0; row < height; row += tileHeight) {
+            for (let col = 0; col < width; col += tileWidth) {
+                const drawWidth = Math.min(tileWidth, width - col);
+                const drawHeight = Math.min(tileHeight, height - row);
+                this.ctx.drawImage(img, x + col, y + row, drawWidth, drawHeight);
+            }
+        }
+    },
+    
     drawArena: function() {
-        // Трава
-        this.ctx.fillStyle = '#3c9e3c';
-        this.ctx.fillRect(0, 0, CONFIG.GAME.width, CONFIG.GAME.height);
+        // Трава (заполняем весь фон травой)
+        this.drawTiledImage('grass', 0, 0, CONFIG.GAME.width, CONFIG.GAME.height, 50, 50);
         
-        // Дорожка
-        this.ctx.fillStyle = '#b87c4f';
-        this.ctx.fillRect(0, 280, CONFIG.GAME.width, 50);
+        // Дорожка (от левого до правого края, ширина 50px)
+        this.drawTiledImage('path', 0, 280, CONFIG.GAME.width, 50, 50, 50);
         
-        // Река
-        this.ctx.fillStyle = '#4aa3df';
-        this.ctx.fillRect(0, 300, CONFIG.GAME.width, 15);
+        // Река (от левого до правого края, ширина 15px)
+        this.drawTiledImage('river', 0, 330, CONFIG.GAME.width, 15, 50, 15);
     },
     
     drawPlayerTower: function() {
